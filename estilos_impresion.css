@@ -1,0 +1,115 @@
+/* Estilos para la página de impresión */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #020202;
+}
+
+th {
+    background-color: #007bff;
+
+    font-weight: bold;
+    font-size: 16px;
+}
+
+td {
+    background-color: #ffffff;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Efectos de hover */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para la impresión */
+@media print {
+    body {
+        text-align: center;
+        font-size: 10pt;
+        background-color: white;
+    }
+    table {
+        width: 100%;
+        page-break-inside: auto;
+        margin-bottom: 20px;
+    }
+    td {
+
+        font-size: 9pt;
+    }
+    th {
+        text-align: center;
+        background-color: #070707;
+        color: rgb(0, 0, 0);
+        font-size: 12pt;
+    }
+    tr:nth-child(even) {
+        background-color: #050505;
+    }
+}
+
+
+/* Establecer márgenes en el cuerpo */
+body {
+    margin: 20px; /* Ajusta el valor según sea necesario */
+    font-family: Arial, sans-serif;
+}
+
+/* Ajustar márgenes de la tabla */
+table {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Estilos para las celdas de la tabla */
+th, td {
+    padding: 5px; /* Espacio dentro de las celdas */
+    text-align: left;
+    border: 1px solid #000000;
+}
+
+/* Estilo de encabezado */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Mejorar la visibilidad de los bordes */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mejorar el borde de la página de impresión */
+@page {
+    margin: 12mm; /* Ajusta el margen de la página */
+}
